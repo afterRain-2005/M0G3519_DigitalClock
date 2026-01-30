@@ -1,0 +1,155 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.43.1.0
+Copyright (C) 2025 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: L 2373314970@qq.com, Wuhan University, LIC=NQQMA-166JI-FW02N-YB3FT-LX2RE-B2UH6
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.43.0.0
+Toolchain Path:  D:\keil5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.24
+Assembler:       Armasm.exe V6.24
+Linker/Locator:  ArmLink.exe V6.24
+Library Manager: ArmAr.exe V6.24
+Hex Converter:   FromElf.exe V6.24
+CPU DLL:         SARMCM3.DLL V5.43.0.0
+Dialog DLL:      DARMCM1.DLL V1.19.6.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.3.1.0
+Dialog DLL:      TARMCM1.DLL V1.14.6.0
+ 
+<h2>Project:</h2>
+C:\ti\mspm0_sdk_2_08_00_03\MyCodeG3519\15_DIGITALCLOCK\keil\text.uvprojx
+Project File Date:  01/27/2026
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.24', folder: 'D:\keil5\ARM\ARMCLANG\Bin'
+Rebuild target 'empty_LP_MSPM0G3519_nortos_keil'
+Before Build - User command #1: C:\ti\mspm0_sdk_2_08_00_03\tools\keil\syscfg.bat
+Using Sysconfig Tool from "C:\ti\sysconfig_1.25.0\sysconfig_cli.bat"
+"Update the file located at <sdk path>/tools/keil/syscfg.bat to use a different version"
+此时不应有 SET。
+assembling startup_mspm0g351x_uvision.s...
+compiling LED.c...
+compiling MusicPlayer.c...
+compiling eeprom_emulation_type_a.c...
+compiling ti_msp_dl_config.c...
+compiling Keyboard.c...
+compiling eeprom_emulation_type_b.c...
+compiling oled_spi_V0.2.c...
+../main.c(1): warning: In file included from...
+./Hardware\bsp.h(21): warning: In file included from...
+./Hardware\oled_spi_V0.2.h(10): warning: 'u8' macro redefined [-Wmacro-redefined]
+   10 | #define  u8  unsigned char 
+      |          ^
+./Hardware\bsp.h(16): note: previous definition is here
+   16 | #define u8 uint8_t
+      |         ^
+../main.c(4): warning: In file included from...
+./Hardware\MusicScore.h(184): warning: left operand of comma operator has no effect [-Wunused-value]
+  184 |         {L3,MT_Haruhikage*2},{L2,MT_Haruhikage*1.2},{L1,MT_Haruhikage*1},{0,MT_Haruhikage*1.5},{L2,MT_Haruhikage*1.5},{L3,MT_Haruhikage*1.5},{0,MT_Haruhikage*1},{L4,MT_Haruhikage*1},{L3,MT_Haruhikage*0.8},{L2,MT_Haruhikage*2},(0,MT_Haruhikage*2),
+      |                                                                                                                                                                                                                                    ^
+./Hardware\MusicScore.h(185): warning: left operand of comma operator has no effect [-Wunused-value]
+  185 |         {L3,MT_Haruhikage*2},{L2,MT_Haruhikage*1.2},{L1,MT_Haruhikage*1},{0,MT_Haruhikage*1.5},{L2,MT_Haruhikage*1.5},{L3,MT_Haruhikage*1.5},{0,MT_Haruhikage*1},{L4,MT_Haruhikage*1},{L3,MT_Haruhikage*0.8},{L2,MT_Haruhikage*2},(0,MT_Haruhikage*2),
+      |                                                                                                                                                                                                                                    ^
+./Hardware\MusicScore.h(186): warning: left operand of comma operator has no effect [-Wunused-value]
+  186 |         {L3,MT_Haruhikage*2},{L2,MT_Haruhikage*1.2},{L1,MT_Haruhikage*1},{0,MT_Haruhikage*1.5},{L2,MT_Haruhikage*1.5},{L3,MT_Haruhikage*1.5},{0,MT_Haruhikage*1},{L4,MT_Haruhikage*1},{L3,MT_Haruhikage*0.8},{L2,MT_Haruhikage*2},(0,MT_Haruhikage*2),
+      |                                                                                                                                                                                                                                    ^
+./Hardware\MusicScore.h(187): warning: left operand of comma operator has no effect [-Wunused-value]
+  187 |         {L3,MT_Haruhikage*2},{L2,MT_Haruhikage*1.2},{L1,MT_Haruhikage*1},{0,MT_Haruhikage*1.5},{L2,MT_Haruhikage*1.5},{L3,MT_Haruhikage*1.5},{0,MT_Haruhikage*1},{L4,MT_Haruhikage*1},{L3,MT_Haruhikage*0.8},{L2,MT_Haruhikage*2},(0,MT_Haruhikage*2),//40
+      |                                                                                                                                                                                                                                    ^
+./Hardware\MusicScore.h(185): warning: excess elements in scalar initializer [-Wexcess-initializers]
+  185 |         {L3,MT_Haruhikage*2},{L2,MT_Haruhikage*1.2},{L1,MT_Haruhikage*1},{0,MT_Haruhikage*1.5},{L2,MT_Haruhikage*1.5},{L3,MT_Haruhikage*1.5},{0,MT_Haruhikage*1},{L4,MT_Haruhikage*1},{L3,MT_Haruhikage*0.8},{L2,MT_Haruhikage*2},(0,MT_Haruhikage*2),
+      |             ^~~~~~~~~~~~~~~
+./Hardware\MusicScore.h(182): note: expanded from macro 'MT_Haruhikage'
+  182 | #define MT_Haruhikage 97
+      |                       ^
+./Hardware\MusicScore.h(186): warning: excess elements in scalar initializer [-Wexcess-initializers]
+  186 |         {L3,MT_Haruhikage*2},{L2,MT_Haruhikage*1.2},{L1,MT_Haruhikage*1},{0,MT_Haruhikage*1.5},{L2,MT_Haruhikage*1.5},{L3,MT_Haruhikage*1.5},{0,MT_Haruhikage*1},{L4,MT_Haruhikage*1},{L3,MT_Haruhikage*0.8},{L2,MT_Haruhikage*2},(0,MT_Haruhikage*2),
+      |             ^~~~~~~~~~~~~~~
+./Hardware\MusicScore.h(182): note: expanded from macro 'MT_Haruhikage'
+  182 | #define MT_Haruhikage 97
+      |                       ^
+./Hardware\MusicScore.h(187): warning: excess elements in scalar initializer [-Wexcess-initializers]
+  187 |         {L3,MT_Haruhikage*2},{L2,MT_Haruhikage*1.2},{L1,MT_Haruhikage*1},{0,MT_Haruhikage*1.5},{L2,MT_Haruhikage*1.5},{L3,MT_Haruhikage*1.5},{0,MT_Haruhikage*1},{L4,MT_Haruhikage*1},{L3,MT_Haruhikage*0.8},{L2,MT_Haruhikage*2},(0,MT_Haruhikage*2),//40
+      |             ^~~~~~~~~~~~~~~
+./Hardware\MusicScore.h(182): note: expanded from macro 'MT_Haruhikage'
+  182 | #define MT_Haruhikage 97
+      |                       ^
+../main.c(161): warning: initializing 'alarm_t *' with an expression of type 'volatile alarm_t *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+  161 |         alarm_t* alarm = &alarms[i];
+      |                  ^       ~~~~~~~~~~
+../main.c(176): warning: passing 'const struct MusicNote[41]' to parameter of type 'struct MusicNote *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+  176 |                                                         case 1:playMusic(Haruhikage,60);        break;
+      |                                                                          ^~~~~~~~~~
+./Hardware\MusicPlayer.h(93): note: passing argument to parameter 'Score' here
+   93 | void playMusic(struct MusicNote Score[],uint16_t ScoreLength);
+      |                                 ^
+../main.c(177): warning: passing 'const struct MusicNote[76]' to parameter of type 'struct MusicNote *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+  177 |                                                         case 2:playMusic(FunkyStar,75); break;
+      |                                                                          ^~~~~~~~~
+./Hardware\MusicPlayer.h(93): note: passing argument to parameter 'Score' here
+   93 | void playMusic(struct MusicNote Score[],uint16_t ScoreLength);
+      |                                 ^
+../main.c(178): warning: passing 'const struct MusicNote[41]' to parameter of type 'struct MusicNote *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+  178 |                                                         default:playMusic(Haruhikage,60);       break;
+      |                                                                           ^~~~~~~~~~
+./Hardware\MusicPlayer.h(93): note: passing argument to parameter 'Score' here
+   93 | void playMusic(struct MusicNote Score[],uint16_t ScoreLength);
+      |                                 ^
+../main.c(220): warning: passing 'const char *' to parameter of type 'char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+  220 |         OLED_ShowString(50,4,wd[w]);
+      |                              ^~~~~
+./Hardware\oled_spi_V0.2.h(77): note: passing argument to parameter 'p' here
+   77 | void OLED_ShowString(u8 x,u8 y, char *p);        
+      |                                       ^
+../main.c(258): warning: initializing 'alarm_t *' with an expression of type 'volatile alarm_t *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+  258 |     alarm_t* alarm = &alarms[alarm_num-1];
+      |              ^       ~~~~~~~~~~~~~~~~~~~~
+../main.c(284): warning: initializing 'alarm_t *' with an expression of type 'volatile alarm_t *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+  284 |         alarm_t* alarm = &alarms[i];
+      |                  ^       ~~~~~~~~~~
+../main.c(298): warning: passing 'const char *' to parameter of type 'char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+  298 |         OLED_ShowString(36, 3+i*2, music_names[alarm->music_id-1]);
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Hardware\oled_spi_V0.2.h(77): note: passing argument to parameter 'p' here
+   77 | void OLED_ShowString(u8 x,u8 y, char *p);        
+      |                                       ^
+../main.c(306): warning: initializing 'alarm_t *' with an expression of type 'volatile alarm_t *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+  306 |     alarm_t* alarm = &alarms[alarm_num-1];
+      |              ^       ~~~~~~~~~~~~~~~~~~~~
+../main.c(374): warning: initializing 'alarm_t *' with an expression of type 'volatile alarm_t *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+  374 |     alarm_t* alarm = &alarms[alarm_num-1];
+      |              ^       ~~~~~~~~~~~~~~~~~~~~
+../main.c(382): warning: passing 'const char *' to parameter of type 'char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+  382 |             OLED_ShowString(6, 2+i, music_names[i]);
+      |                                     ^~~~~~~~~~~~~~
+./Hardware\oled_spi_V0.2.h(77): note: passing argument to parameter 'p' here
+   77 | void OLED_ShowString(u8 x,u8 y, char *p);        
+      |                                       ^
+../main.c(762): warning: result of comparison of constant 65535 with expression of type 'volatile int16_t' (aka 'volatile short') is always false [-Wtautological-constant-out-of-range-compare]
+  762 |         if (date.year == 0xFFFF && date.month == 0xFF && date.day == 0xFF &&
+      |             ~~~~~~~~~ ^  ~~~~~~
+20 warnings generated.
+compiling main.c...
+linking...
+Program Size: Code=15272 RO-data=1660 RW-data=136 ZI-data=1828  
+FromELF: creating hex file...
+".\Objects\test.axf" - 0 Error(s), 20 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: TexasInstruments
+                https://software-dl.ti.com/msp430/esd/MSPM0-CMSIS/MSPM0GX51X/latest/exports/TexasInstruments.MSPM0GX51X_DFP.1.0.0.pack
+                TexasInstruments::MSPM0GX51X_DFP@1.0.0
+                Device Family Pack for Texas Instruments MSPM0GX51X Series
+
+<h2>Collection of Component include folders:</h2>
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

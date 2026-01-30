@@ -1,0 +1,8 @@
+--cpu Cortex-M0+
+".\objects\startup_mspm0g351x_uvision.o"
+".\objects\ti_msp_dl_config.o"
+".\objects\main.o"
+--strict --scatter "..\..\..\source\ti\driverlib\lib\keil\m0p\mspm0gx51x\driverlib.a"
+../../../../../../source/ti/driverlib/lib/keil/m0p/mspm0gx51x/driverlib.a --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\testl.map" -o .\Objects\testl.axf
